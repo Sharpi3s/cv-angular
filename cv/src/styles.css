@@ -1,0 +1,259 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scrollbar-width: thin;
+  scrollbar-color: #474B5C #353746;
+  font-family: 'Raleway', 'Roboto', sans-serif;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #353746;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #474B5C;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2c2e3a;
+}
+
+html, body {
+  background-color: #353746;
+  background-image: url(../src/assets/images/bg-gradiant2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+  /* background-size:100%; */
+  color: #F3F4FD;
+  margin: 0;
+  padding: 0;
+}
+
+.height {
+  min-height: calc(100vh - 130.59px);
+}
+
+.bg-primary-gray {
+  background-color: #464857;
+}
+.bg-darker-gray {
+  background-color: #353746;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.118);
+}
+
+.gradiant {
+  background: rgb(53,55,70);
+  background: linear-gradient(0deg, rgba(53,55,70,1) 0%, rgba(70,72,87,1) 100%);
+}
+
+.font-raleway {
+  font-family: 'Raleway', 'Roboto', sans-serif;
+  letter-spacing: 1px;
+}
+
+.font-raleway-heading {
+  font-family: 'Raleway', 'Roboto', sans-serif;
+  letter-spacing: 12px;
+}
+
+.font-raleway-space {
+  font-family: 'Raleway', 'Roboto', sans-serif;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+.font-code {
+  font-family: 'Fira Code','Roboto Mono', monospace;
+}
+
+.text-prim {
+  color: #F3F4FD !important;
+}
+
+.text-second {
+  color: #DEE0ED !important;
+}
+
+.text-dark-prim {
+  color: #75798C;
+}
+
+.main-color-text {
+  color: #03DAC6;
+}
+
+.secondary-color-text {
+  color: #FF77BE;
+}
+
+.f-z {
+  font-size: 1.2rem;
+}
+
+.f-z-1 {
+  font-size: 1.5rem;
+}
+
+.f-z-2 {
+  font-size: 2rem;
+}
+
+.f-z-3 {
+  font-size: 3rem;
+}
+
+.f-z-4 {
+  font-size: 5rem;
+}
+
+.f-w-1 {
+  font-weight: 500;
+}
+
+.f-w-2 {
+  font-weight: 700;
+}
+
+.f-w-3 {
+  font-weight: 800;
+}
+
+.main-color {
+  background-color: #03DAC6;
+}
+
+.secondary-color {
+  background-color: #FF77BE;
+}
+
+.light-color {
+  background-color: #F3F4FD;
+}
+
+.btn-prime {
+  background-color: transparent;
+  color: #03DAC6;
+  /* border: 2px solid #03DAC6; */
+  box-shadow: -3px 5px 10px rgba(51, 51, 51, 0.357), inset 0 0 0 2px #03DAC6;
+  border-radius: 3px;
+  transition: 0.3s transform ease;
+  will-change: transform;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.btn-prime:after {
+  background-color: #03DAC6;
+  /* box-shadow: -3px 5px 10px rgba(51, 51, 51, 0.357), inset 0 0 0 2px #03DAC6; */
+  /* border-radius: 0 50px 50px 0; */
+  
+  content: '';
+  display: block;
+  height: 100%;
+  width: 180%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-120%, 0) skew(45deg);
+  
+  /* transform: translate(-100%, 0) rotate(10deg); */
+  transform-origin: top left;
+  transition: 0.3s transform linear;
+  will-change: transform;
+  z-index: -1;
+}
+.riplled-surface {
+  box-shadow: 0 0 0 2px #03DAC6;
+}
+
+.btn-prime:hover::after {
+  /* background-color: #03DAC6;  */
+  transform: translate(-15%, 0) skew(45deg);
+  /* box-shadow: 0 0 0 2px #03DAC6; */
+} 
+.btn-prime:focus {
+  /* background-color: #03DAC6;  */
+  box-shadow: -3px 5px 10px rgba(51, 51, 51, 0.357), inset 0 0 0 2px #03DAC6;
+  /* box-shadow: 0 0 0 2px #03DAC6; */
+} 
+.btn-prime:hover {
+  /* background-color: #03DAC6; */
+  color: #414455;
+  font-weight: 700;
+  /* transform: scale(1); */
+  will-change: transform;
+  /* transition: 1s transform ease-out; */
+  /* border: 3px solid #03DAC6; */
+  /* border-radius: 5px; */
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* .btn-prime {
+  background-color: transparent;
+  color: #03DAC6;
+  border: 3px solid #03DAC6;
+  border-radius: 5px;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.btn-prime::after {
+  background-color: #03DAC6;
+  border-radius: 5px;
+  border: 2px solid #03DAC6;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: .2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.btn-prime:hover::after {
+  background-color: #03DAC6; 
+  transform: translate(0, 0);
+}
+.btn-prime:hover {
+
+  color: #353746;
+  font-weight: 700;
+  transform: scale(1.05);
+  will-change: transform;
+
+} */
+
+
+
+
+
+
+/* font-family: 'Fira Code','Roboto Mono', monospace; */
+
+/* font-family: 'Raleway', 'Roboto', sans-serif; */

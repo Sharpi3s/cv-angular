@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="38" viewBox="0 0 135 38">
+  <defs>
+    <filter id="Ellipse_22" x="92.927" y="7.163" width="22.386" height="21.674" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_23" x="19.685" y="7.163" width="22.522" height="21.674" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_22-2" x="94.927" y="9.122" width="18.386" height="17.674" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_23-2" x="21.685" y="9.122" width="18.145" height="17.674" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-4"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-pupils2">
+      <rect width="135" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="pupils2" clip-path="url(#clip-pupils2)">
+    <g id="pupiller" transform="translate(-307.247 -224)">
+      <g id="Group_71" data-name="Group 71" transform="translate(329.932 234.163)">
+        <g transform="matrix(1, 0, 0, 1, -22.68, -10.16)" filter="url(#Ellipse_22)">
+          <ellipse id="Ellipse_22-3" data-name="Ellipse 22" cx="8.193" cy="7.837" rx="8.193" ry="7.837" transform="translate(95.93 10.16)" fill="#c5c9db"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -22.68, -10.16)" filter="url(#Ellipse_23)">
+          <ellipse id="Ellipse_23-3" data-name="Ellipse 23" cx="8.261" cy="7.837" rx="8.261" ry="7.837" transform="translate(22.68 10.16)" fill="#c5c9db"/>
+        </g>
+      </g>
+      <g id="Group_72" data-name="Group 72" transform="translate(331.932 236.122)">
+        <g transform="matrix(1, 0, 0, 1, -24.68, -12.12)" filter="url(#Ellipse_22-2)">
+          <ellipse id="Ellipse_22-4" data-name="Ellipse 22" cx="6.193" cy="5.837" rx="6.193" ry="5.837" transform="translate(97.93 12.12)" fill="#75798c"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -24.68, -12.12)" filter="url(#Ellipse_23-2)">
+          <ellipse id="Ellipse_23-4" data-name="Ellipse 23" cx="6.072" cy="5.837" rx="6.072" ry="5.837" transform="translate(24.68 12.12)" fill="#75798c"/>
+        </g>
+      </g>
+      <g id="Group_73" data-name="Group 73" transform="translate(338 239)">
+        <circle id="Ellipse_24" data-name="Ellipse 24" cx="1.5" cy="1.5" r="1.5" transform="translate(1)" fill="#fff"/>
+        <circle id="Ellipse_25" data-name="Ellipse 25" cx="1.5" cy="1.5" r="1.5" transform="translate(73.997)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

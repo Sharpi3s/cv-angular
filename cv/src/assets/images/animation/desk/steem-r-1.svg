@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.724" height="78.322" viewBox="0 0 24.724 78.322">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.49"/>
+      <stop offset="0.519" stop-color="#f9f9fe" stop-opacity="0.741"/>
+      <stop offset="1" stop-color="#f3f4fd" stop-opacity="0.51"/>
+    </linearGradient>
+  </defs>
+  <path id="steem-r-1" d="M-.218,19.442C-.614,6.141,8.168-.112,8.168-.112A42.641,42.641,0,0,0,4.7,20.139C5.69,31.184,9.61,31.992,12.543,43.756c3.572,14.328-.9,31.548-2.124,33.09s1.849-9.209-.8-24.173S.178,32.742-.218,19.442Z" transform="translate(0.244 2.046) rotate(-8)" fill="url(#linear-gradient)"/>
+</svg>

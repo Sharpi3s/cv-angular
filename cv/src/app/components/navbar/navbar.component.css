@@ -1,0 +1,32 @@
+.logo-nav {
+  height: 2.5rem;
+  margin-right: 0;
+}
+
+.is-active {
+  box-shadow: 0 5px 0 -3px #03DAC6;
+}
+
+.nav-link {
+  padding-top: 0;
+}
+
+
+
+@media (min-width: 768px) {
+  .navbar-margin {
+    margin: 0 25px 0 25px ;
+  }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+
+}
+@media (min-width: 1400px) {
+.navbar-margin {
+  margin: 0 100px 0 100px ;
+}
+}

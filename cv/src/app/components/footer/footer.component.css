@@ -1,0 +1,67 @@
+.footer-p {
+  padding: 0.9rem 0 0.9rem 0.9rem;
+  /* padding: 0.9rem 0 0.9rem 0; */
+}
+
+.footer-text {
+  font-size: 0.8rem;
+}
+
+.icon-linkedin {
+  border-radius: 50%;
+  /* border: 10px solid #F3F4FD; */
+  background-color: #F3F4FD;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2px;
+  transition: .4s background-color ease;
+}
+
+.icon-linkedin .fab {
+  color: #383947;
+
+}
+.icon-linkedin:hover {
+  background-color: #aeafb6;
+  transition: .4s background-color ease;
+}
+
+.icon-github {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  color: #F3F4FD;
+  transition: .4s color ease;
+}
+.icon-github:hover {
+  color: #aeafb6;
+  transition: .4s color ease;
+}
+
+
+
+@media (min-width: 768px) {
+  .footer-margin {
+    margin: 0 25px 0 25px ;
+  }
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+
+}
+@media (min-width: 1400px) {
+  .footer-margin {
+    margin: 0 100px 0 100px ;
+  }
+  .footer-text {
+    font-size: 1.1rem;
+  }
+
+}

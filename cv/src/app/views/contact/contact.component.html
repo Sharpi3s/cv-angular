@@ -1,0 +1,154 @@
+<div class="">
+ 
+  <div class="container height-contact">
+  <!-- <div class="container d-flex justify-content-between height-contact"> -->
+
+
+    <div class="col-12 col-lg-9 col-xl-6">
+      <h2 class="text-uppercase text-second font-raleway-heading display-4 f-w-1 mt-5">KONTAKTA MIG.</h2>
+      <form #contactForm="ngForm"  (ngSubmit)="send(contactForm)" class="col-12 col-lg-10" id="contact-form" autocomplete="off">
+        
+        <div id="shake-form"> 
+               
+        <div class="row" >
+          <div class="col relative">
+            <input 
+              type="text" 
+              class="form-control" 
+              placeholder="Namn" 
+              name="namn"
+              id="namn"
+              [(ngModel)]="message.namn"
+              #namn="ngModel" 
+              required 
+              minlength="2" />
+            <div  class="line-holder"><div id="line-name"></div></div>
+            <div *ngIf="!namn.valid && (namn.touched || namn.dirty)">
+              <small class="has-error" 
+                *ngIf="namn.errors?.required">
+                Berätta gärna vad du heter!
+              </small>
+              <small class="has-error" 
+                *ngIf="namn.errors?.minlength">
+                Fyll i minst 2 bokstäver
+              </small>
+            </div>
+
+          </div>
+        
+          <div class="col relative">
+            <input 
+              type="text" 
+              class="form-control" 
+              placeholder="E-post"
+              name="email"
+              id="email"
+              [(ngModel)]="message.email"
+              #email="ngModel"
+              required 
+              pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{1,}([.][a-zA-Z]{1,}|[.][\w-]{1,}[.][a-zA-Z]{2,})$" />
+              <!-- pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" /> -->
+              <!-- pattern="\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}" /> -->
+            <div  class="line-holder"><div id="line-email"></div></div>
+            <div *ngIf="!email.valid && (email.touched || email.dirty)">
+              <small class="has-error" 
+              *ngIf="email.errors?.required">
+                Din e-post så jag kan återkomma
+              </small>
+              <small class="has-error" 
+              *ngIf="email.errors?.pattern">
+                Fyll i en giltig e-post adress
+              </small>
+            </div>
+          </div>
+      
+        </div>
+
+        <div class="row">
+          <div class="col-12 relative">
+            <input 
+              type="text" 
+              class="form-control" 
+              placeholder="Ämne" 
+              name="subject"
+              id="sub"
+              [(ngModel)]="message.sub"
+              #subject="ngModel"
+              required 
+              minlength="3" />
+            <div  class="line-holder"><div id="line-sub"></div></div>
+            <div *ngIf="!subject.valid && (subject.touched || subject.dirty)">
+              <small class="has-error" 
+              *ngIf="subject.errors?.required">
+                 Det är mer än okej att börja med ett Hej <span class="waving-hand">👋</span>
+              </small>
+              <small class="has-error" 
+              *ngIf="subject.errors?.minlength">
+                Det är mer än okej att börja med ett Hej <span class="waving-hand">👋</span>
+              </small>
+            </div>
+          </div>
+        
+          <div class="col-12 relative">
+            <textarea 
+              class="form-control" 
+              rows="8" 
+              placeholder="Meddelande"
+              name="message"
+              id="msg"
+              [(ngModel)]="message.msg"
+              #message="ngModel"
+              required 
+              minlength="2">
+            </textarea>
+            <div  class="line-holder"><div id="line-msg"></div></div>
+            <div *ngIf="!message.valid && (message.touched || message.dirty)">
+              <small class="has-error" 
+              *ngIf="message.errors?.required">
+                 Vad ska vi prata om ?
+              </small>
+              <small class="has-error" 
+              *ngIf="message.errors?.minlength">
+                Vad ska vi prata om?
+              </small>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <div class="d-flex justify-content-end col-12 mb-5">
+          <button type="submit" id="contact-btn" class="btn btn-prime text-uppercase f-z font-raleway-space px-4" >Skicka!</button>
+          <!-- <button type="submit" id="contact-btn" class="btn btn-prime text-uppercase f-z-1 font-raleway-space px-4 mt-5" [disabled]="!contactForm.valid">Skicka !</button> -->
+        </div>
+
+      </form>
+    </div>
+    
+   
+    <div class="col-12 col-md-7 col-lg-6 blink">
+      <div class="open-eyes">
+        <div id="pupils">
+          <div id="pupil1">
+            <div id="ball1"></div>
+          </div>
+          <div id="pupil2">
+            <div id="ball2"></div>
+          </div>  
+        </div>
+        <!-- <div class="box"> -->
+          <!-- <img id="pupils" src="../../../assets/images/animation/blink/pupils2.svg" alt=""> -->
+        <!-- </div> -->
+        
+        <img id="eyes" src="../../../assets/images/animation/blink/eye-base-new.svg" alt="">
+        <img id="lashes-up" src="../../../assets/images/animation/blink/lashes-up.svg" alt="">
+        <img id="lashes-down" src="../../../assets/images/animation/blink/lashes-down.svg" alt="">
+      </div>
+      <img id="lips" src="../../../assets/images/animation/blink/lips2.svg" alt="">
+    </div>
+    <!-- <div class="col-6 d-flex justify-content-center align-items-center pb-5 ms-5">
+      <img class="img-fluid" src="../../../assets/images/animation/blink/face-with-lips.png" alt="">
+    </div> -->
+  
+  </div>
+
+</div>

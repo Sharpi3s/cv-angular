@@ -1,0 +1,449 @@
+.height-contact {
+  min-height: calc(100vh - 175px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  /* height: 60vh; */
+  margin-top: 3rem;
+  /* min-height: calc(100vh - 301px); */
+}
+
+input, textarea {
+  /* padding: 1rem; */
+  padding: 0.5rem 0.8rem;
+  background-color: #515566;
+  outline: none;
+  border: none;
+  margin-bottom: 24px;
+  /* border-bottom: 2px solid transparent; */
+  position: relative;
+  border-radius: 3px;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+  transition-delay: 3600s;
+}
+
+input:focus, textarea:focus {
+  /* padding: 1rem; */
+  background-color: #515566;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  /* border-bottom: 2px solid #03DAC6; */
+  /* box-shadow: 0px 3px 0px -1px #03DAC6; */
+  /* box-shadow: inset 0 -1px 0 2px #03DAC6; */
+  box-sizing: border-box;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  color: transparent;
+}
+.form-control {
+  color: #F3F4FD !important;
+}
+
+.line-holder {
+  position: relative;
+  /* border: 1px solid yellow; */
+  width: 100%;
+  height: 2px;
+  bottom: 26px;
+  left: 0;
+  /* border: 1px solid yellow; */
+
+  overflow: hidden;
+}
+
+#line-name, #line-email, #line-sub, #line-msg {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background-color: transparent;
+  transform: translate(-100%, 0);
+  transition: 0.3s transform linear;
+}
+
+::placeholder { 
+  /* color: #DEE0ED; */
+  color: #9B9FB0;
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+  color: #F3F4FD !important;
+}
+
+.has-error {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  color: #CF6679;
+  font-size: 0.7rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.blink { 
+  background-image: url(../../../assets/images/animation/blink/blank-face.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  /* margin-left: 4rem; */
+  position: relative;
+  height: 300px;
+}
+
+.open-eyes {
+  position: absolute;
+  top: 80px;
+  left: 131px;
+}
+#pupils {
+  position: absolute; 
+  opacity: 1;
+  top: 1px;
+  left: 7px;
+  height: 20px;
+  width: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fade-eyes 6s infinite linear;
+  /* border: 1px solid yellow; */
+}
+
+#pupil1 {
+  width: 20px;
+  height: 13px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid transparent;
+  /* border: 1px solid green; */
+  overflow: hidden;
+}
+
+#pupil2 {
+  width: 20px;
+  height: 13px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid transparent;
+  /* border: 1px solid green; */
+  overflow: hidden;
+}
+
+#ball1 {
+  background-image: url(../../../assets/images/animation/blink/ball.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 5px;
+  border-radius: 50%;
+  /* border: 1px solid yellowgreen; */
+}
+
+#ball2 {
+  background-image: url(../../../assets/images/animation/blink/ball.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 4px;
+  border-radius: 50%;
+  /* border: 1px solid yellowgreen; */
+}
+
+#eyes {
+  position: absolute;
+  height: 22px;
+}
+
+#lashes-up {
+  position: absolute;
+  height: 22px;
+  opacity: 1;
+  animation: open 6s infinite linear;
+}
+
+#lashes-down {
+  opacity: 0;
+  position: absolute;
+  height: 22px;
+  animation: close 6s infinite linear;
+  transform: matrix(1, 0, 0, -0.8, 0, 0);
+}
+
+#lips {
+  position: absolute;
+  top: 128px;
+  left: 151px;
+  height: 18px;
+  /* transform-origin: bottom left; */
+  /* transform: matrix(1, 0, 0, 0.8, 0, 0) skew(10); */
+  /* transform: skew(-3deg) rotate(-2deg); */
+  /* transform: skew(3deg) rotate(0deg); */
+}
+
+
+@keyframes fade-eyes {
+  88%   { transform: matrix(1, 0, 0, 1, 0, 0);      opacity: 1;   } 
+  90%   { transform: matrix(1, 0, 0, 0.8, 0, 4);    opacity: 1;   }
+  92%   { transform: matrix(1, 0, 0, 0.6, 0, 8);    opacity: 1;   }
+  94%   { transform: matrix(1, 0, 0, 0.4, 0, 9);   opacity: 0.8;  }
+  96%   { transform: matrix(1, 0, 0, 0.6, 0, 8);    opacity: 0.8; }
+  98%   { transform: matrix(1, 0, 0, 0.8, 0, 1);    opacity: 1;   }
+  100%  { transform: matrix(1, 0, 0, 1, 0, 0);      opacity: 1;   }
+}
+
+@media (min-width: 768px) {
+  .blink { 
+    margin-left: 4rem;
+    position: relative;
+    height: 280px;
+    /* transform: translate(25%, 0); */
+  }
+  
+  .open-eyes {
+    position: absolute;
+    top: 80px;
+    left: 131px;
+  }
+
+}
+@media (min-width: 992px) {
+  .height-contact {
+    min-height: calc(100vh - 128px);
+    /* flex-direction: row; */
+  }
+
+}
+@media (min-width: 1200px) {
+  .height-contact {
+    min-height: calc(100vh - 131.5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .open-eyes {
+    top: 128px;
+    left: 207px;
+  }
+
+  .eyes {
+    height: 33px;
+  }
+
+}
+@media (min-width: 1400px) {
+  
+  .blink { 
+
+    margin-left: 4rem;
+    position: relative;
+    height: 500px;
+  }
+
+
+  .open-eyes {
+    position: absolute;
+    top: 147px;
+    left: 240px;
+  }
+
+  #pupils {
+    position: absolute; 
+    opacity: 1;
+    top: 8px;
+    left: 14px;
+    height: 20px;
+    width: 107px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fade-eyes 6s infinite linear;
+  }
+
+  #pupil1 {
+    width: 32px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid transparent;
+    /* border: 1px solid green; */
+    overflow: hidden;
+  }
+
+  #pupil2 {
+    width: 32px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid transparent;
+    /* border: 1px solid green; */
+    overflow: hidden;
+  }
+
+  #ball1 {
+    background-image: url(../../../assets/images/animation/blink/ball.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 1.5px;
+    border-radius: 50%;
+    /* border: 1px solid yellowgreen; */
+  }
+
+  #ball2 {
+    background-image: url(../../../assets/images/animation/blink/ball.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 1px;
+    border-radius: 50%;
+    /* border: 1px solid yellowgreen; */
+  }
+
+  #eyes {
+    position: absolute;
+    height: unset;
+  }
+
+  #lashes-up {
+    position: absolute;
+    height: unset;
+    opacity: 1;
+    animation: open 6s infinite linear;
+  }
+
+  #lashes-down {
+    opacity: 0;
+    position: absolute;
+    height: unset;
+    animation: close 6s infinite linear;
+    transform: matrix(1, 0, 0, -0.8, 0, 0);
+  }
+
+  #lips {
+    position: absolute;
+    top: 229px;
+    left: 273px;
+    height: unset;
+    /* transform-origin: bottom left; */
+    /* transform: matrix(1, 0, 0, 0.8, 0, 0) skew(10); */
+    /* transform: skew(-3deg) rotate(-2deg); */
+    /* transform: skew(3deg) rotate(0deg); */
+  }
+  #lips:hover {
+
+    /* transform-origin: bottom left; */
+    /* transform: matrix(1, 0, 0, 0.8, 0, 0) skew(10); */
+    transform: skew(-3deg) rotate(-20deg);
+    /* transform: skew(3deg) rotate(0deg); */
+  }
+  
+  @keyframes fade-eyes {
+    88%   { transform: matrix(1, 0, 0, 1, 0, 0);      opacity: 1;   } 
+    90%   { transform: matrix(1, 0, 0, 0.8, 0, 4);    opacity: 1;   }
+    92%   { transform: matrix(1, 0, 0, 0.6, 0, 8);    opacity: 1;   }
+    94%   { transform: matrix(1, 0, 0, 0.4, 0, 12);   opacity: 0.8; }
+    96%   { transform: matrix(1, 0, 0, 0.6, 0, 8);    opacity: 0.8; }
+    98%   { transform: matrix(1, 0, 0, 0.8, 0, 1);    opacity: 1;   }
+    100%  { transform: matrix(1, 0, 0, 1, 0, 0);      opacity: 1;   }
+  }
+
+} 
+
+
+@keyframes open {
+  88%   { transform: matrix(1, 0, 0, 1, 0, 0);      opacity: 1;   }
+  90%   { transform: matrix(1, 0, 0, 0.8, 0, 2);    opacity: 1;   }
+  92%   { transform: matrix(1, 0, 0, 0.1, 0, 3);    opacity: 0.3; }
+  94%   { transform: matrix(1, 0, 0, -0.8, 0, 5);   opacity: 0;   }
+  96%   { transform: matrix(1, 0, 0, 0.1, 0, 3);    opacity: 0.3; }
+  98%   { transform: matrix(1, 0, 0, 0.8, 0, 0);    opacity: 0.8; }
+  100%  { transform: matrix(1, 0, 0, 1, 0, 0);      opacity: 1;   }
+}
+
+@keyframes close {
+  88%   { transform: matrix(1, 0, 0, -0.8, 0, 0);   opacity: 0;   }
+  90%   { transform: matrix(1, 0, 0, -0.3, 0, 0);   opacity: 0;   }
+  92%   { transform: matrix(1, 0, 0, 0.3, 0, 0);    opacity: 1;   }
+  94%   { transform: matrix(1, 0, 0, 1, 0, 0);      opacity: 1;   }
+  96%   { transform: matrix(1, 0, 0, 0.3, 0, 0);    opacity: 0.8; }
+  98%   { transform: matrix(1, 0, 0, -0.5, 0, 0);   opacity: 0;   }
+  100%  { transform: matrix(1, 0, 0, -0.8, 0, 0);   opacity: 0;   }
+} 
+
+
+@keyframes shake1 {
+  0%    { transform: translate(1px, 1px) rotate(0deg);    }
+  10%   { transform: translate(-1px, -2px) rotate(-1deg); }
+  20%   { transform: translate(-3px, 0px) rotate(1deg);   }
+  30%   { transform: translate(3px, 2px) rotate(0deg);    }
+  40%   { transform: translate(1px, -1px) rotate(1deg);   }
+  50%   { transform: translate(-1px, 2px) rotate(-1deg);  }
+  60%   { transform: translate(-3px, 1px) rotate(0deg);   }
+  70%   { transform: translate(3px, 1px) rotate(-1deg);   }
+  80%   { transform: translate(-1px, -1px) rotate(1deg);  }
+  90%   { transform: translate(1px, 2px) rotate(0deg);    }
+  100%  { transform: translate(1px, -2px) rotate(-1deg);  }
+}
+@keyframes shake2 {
+  0%    { transform: translate(1px, 1px) rotate(0deg);    }
+  10%   { transform: translate(-1px, -2px) rotate(-1deg); }
+  20%   { transform: translate(-3px, 0px) rotate(1deg);   }
+  30%   { transform: translate(3px, 2px) rotate(0deg);    }
+  40%   { transform: translate(1px, -1px) rotate(1deg);   }
+  50%   { transform: translate(-1px, 2px) rotate(-1deg);  }
+  60%   { transform: translate(-3px, 1px) rotate(0deg);   }
+  70%   { transform: translate(3px, 1px) rotate(-1deg);   }
+  80%   { transform: translate(-1px, -1px) rotate(1deg);  }
+  90%   { transform: translate(1px, 2px) rotate(0deg);    }
+  100%  { transform: translate(1px, -2px) rotate(-1deg);  }
+}
+@keyframes wave-animation {
+  0%    { transform: rotate( 0.0deg) }
+  15%   { transform: rotate(14.0deg) } 
+  30%   { transform: rotate(-8.0deg) }
+  40%   { transform: rotate(14.0deg) }
+  50%   { transform: rotate(-4.0deg) }
+  60%   { transform: rotate(10.0deg) }
+  70%   { transform: rotate( 0.0deg) } 
+  100%  { transform: rotate( 0.0deg) }
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+.animation1 {
+  /* animation: none !important; */
+  animation: shake1 1s linear;
+}
+.animation2 {
+  animation: shake2 1s linear;
+}

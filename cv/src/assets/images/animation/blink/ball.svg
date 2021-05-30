@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <filter id="Ellipse_23" x="-1.262" y="-0.837" width="22.522" height="21.674" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_23-2" x="0.738" y="1.122" width="18.145" height="17.674" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-ball">
+      <rect width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="ball" clip-path="url(#clip-ball)">
+    <g id="Group_72" data-name="Group 72" transform="translate(3.739 4.122)">
+      <g transform="matrix(1, 0, 0, 1, -3.74, -4.12)" filter="url(#Ellipse_23)">
+        <ellipse id="Ellipse_23-3" data-name="Ellipse 23" cx="8.261" cy="7.837" rx="8.261" ry="7.837" transform="translate(1.74 2.16)" fill="#c5c9db"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -3.74, -4.12)" filter="url(#Ellipse_23-2)">
+        <ellipse id="Ellipse_23-4" data-name="Ellipse 23" cx="6.072" cy="5.837" rx="6.072" ry="5.837" transform="translate(3.74 4.12)" fill="#75798c"/>
+      </g>
+      <circle id="Ellipse_24" data-name="Ellipse 24" cx="1.5" cy="1.5" r="1.5" transform="translate(7.068 2.878)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

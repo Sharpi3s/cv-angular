@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270.212" height="358.591" viewBox="0 0 270.212 358.591">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03dac6"/>
+      <stop offset="1" stop-color="#03877b"/>
+    </linearGradient>
+  </defs>
+  <path id="squid-left" d="M2392.855,1742.591s-7.28,16.945-33.141,53.92c-20.6,29.447-49.974,57.157-88.321,60.287-85.787,7-121.141-79.368-112.786-106.521s39.162-36.551,54.3-74.147,3.592-76.618,3.592-76.618,4.5-26.48-8.556-46.583-36.6-33.749-40.986-33.447-11.053,31.695-3.221,53.886,34.55,34.881,34.55,34.881,10.7,32.374-5.222,67.881-51.482,33.745-53.571,77.867,21.38,88.381,73.413,114.081,130.032-9.982,143.817-29,44.5-36.244,51.813-79.381Z" transform="translate(-2138.863 -1518.975)" stroke="#00a089" stroke-width="1" fill="url(#linear-gradient)"/>
+</svg>
